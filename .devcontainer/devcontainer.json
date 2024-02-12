@@ -1,6 +1,11 @@
 {
   "name": "ESPHome Dev",
   "image": "ghcr.io/esphome/esphome-lint:dev",
+  "features": {
+    "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
+        "packages": "procps"
+    }
+  },
   "postCreateCommand": ["script/devcontainer-post-create"],
   "containerEnv": {
     "DEVCONTAINER": "1",
